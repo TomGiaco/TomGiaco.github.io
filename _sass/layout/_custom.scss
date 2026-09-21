@@ -1,0 +1,84 @@
+/* ==========================================================================
+   CUSTOM OVERRIDES
+   --------------------------------------------------------------------------
+   Personal tweaks to the AcademicPages theme. Everything that deviates from
+   the upstream theme lives here, so the rest of _sass/ stays untouched and
+   can be merged from upstream without conflicts.
+
+   Imported last in assets/css/main.scss, so these rules win on source order
+   and need no !important.
+   ========================================================================== */
+
+/*
+   Slimmer footer
+   -------------------------------------------------------------------------- */
+
+.page__footer {
+  margin-top: 1.5em; // was 3em; only visible below 768px, where the footer is static
+
+  footer {
+    margin-top: 0; // was 1em
+    padding: 0.35em 1em; // was 0 1em 1em
+  }
+}
+
+.page__footer-copyright {
+  margin: 0;
+  line-height: 1.4;
+}
+
+// Reclaim the space that was reserved for the old, taller footer.
+// ~48px comfortably clears the ~28px footer.
+body {
+  padding-bottom: 3em; // was 9em
+}
+
+/*
+   Wider sidebar that cannot overlap the body text
+   --------------------------------------------------------------------------
+   Above $sidebar-screen-min-width the sidebar is position: fixed, so a
+   percentage width resolves against the VIEWPORT, while .page resolves
+   against #main (capped at $large, or $x-large on big screens). The sidebar
+   was therefore sized off a larger box than the gap reserved for it and
+   overhung the text. Explicit pixel widths avoid that mismatch entirely.
+
+   .page nets the same text measure as before: 9 - 0.5 prefix - 1 suffix
+   = 7.5 columns, same as the upstream 10 - 0.5 - 2.
+   -------------------------------------------------------------------------- */
+
+@include breakpoint($large) {
+  .sidebar {
+    width: 200px;
+    max-width: none;
+    overflow-wrap: break-word; // guard against long unbreakable strings
+  }
+
+  .page {
+    @include span(9 of 12 last);
+    @include suffix(1 of 12);
+  }
+
+  .archive {
+    @include span(9 of 12 last);
+  }
+}
+
+@include breakpoint($x-large) {
+  .sidebar {
+    width: 280px;
+    max-width: 280px;
+  }
+}
+
+/*
+   Avatar
+   --------------------------------------------------------------------------
+   Cap the size and force a square crop, so a portrait photo can neither
+   stretch the sidebar nor render as an ellipse under border-radius: 50%.
+   -------------------------------------------------------------------------- */
+
+.author__avatar img {
+  max-width: 130px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}

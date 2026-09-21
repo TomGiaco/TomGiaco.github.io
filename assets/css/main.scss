@@ -35,5 +35,8 @@
     "layout/page",
     "layout/archive",
     "layout/sidebar",
-    "layout/json_cv"
+    "layout/json_cv",
+
+    // Personal overrides - must stay last so it wins on source order
+    "layout/custom"
 ;
