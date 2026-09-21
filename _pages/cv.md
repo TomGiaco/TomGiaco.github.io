@@ -11,54 +11,61 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* **Ph.D. in Computer Science**, Bocconi University, Milan — Sep 2026 – present
+  * Research: transformer models for understanding gene regulation and synthetic biological data generation
+  * Core courses: Computer Science, Modern Machine Learning, Bayesian Statistics, Statistical Physics, Stochastic Processes
+  * Recipient of a PhD scholarship from the Fondo Italiano per la Scienza (FIS)
 
-Work experience
+* **M.Sc. in Artificial Intelligence**, Bocconi University, Milan — Sep 2024 – Oct 2026
+  * GPA: 28/30
+  * Thesis: *Gene Regulatory Network Inference from Enformer-based models*
+  * Core courses: Bioinformatics, Deep Learning, Reinforcement Learning, Natural Language Processing, Computer Vision, Software Engineering
+
+* **B.Sc. in Mathematical and Computing Sciences for Artificial Intelligence**, Bocconi University, Milan — Sep 2021 – Jul 2024
+  * Grade: 106/110
+  * Thesis: *Enriched Gene Regulatory Network algorithm applied to cancer cell dataset*
+  * Core courses: Algebra, Analysis, Physics, Statistics, Machine Learning, Optimization, Algorithms, Neuroscience
+
+Research experience
 ======
-* Spring 2024: Academic Pages Collaborator
-  * GitHub University
-  * Duties includes: Updates and improvements to template
-  * Supervisor: The Users
+* **Visiting Researcher**, Weatherall Institute of Molecular Medicine, University of Oxford, UK — Feb 2026 – May 2026
+  * Applied pre-trained transformer-based models (Enformer, AlphaGenome) to infer cell-type-specific Gene Regulatory Networks from multi-omics epigenomic data (RNA-seq, ATAC-seq, TF ChIP-seq)
+  * Worked with large-scale datasets and HPC infrastructure (SLURM, GPU-accelerated training)
+  * Supervised by Prof. Jim Hughes and Simone Riva
 
-* Fall 2015: Research Assistant
-  * GitHub University
-  * Duties included: Merging pull requests
-  * Supervisor: Professor Hub
-
-* Summer 2015: Research Assistant
-  * GitHub University
-  * Duties included: Tagging issues
-  * Supervisor: Professor Git
-  
-Skills
-======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* **Assistant Researcher**, Department of Computing Sciences, Bocconi University, Milan — Sep 2024 – present
+  * Developed machine learning methods for Gene Regulatory Network inference using scRNA-seq and scATAC-seq data
+  * Extended the CellOracle framework with enrichment-based methods to improve biological interpretability
+  * Awarded three research contracts under the ERC-funded MicroC project
+  * Supervised by Prof. Francesca Buffa
 
 Publications
 ======
   <ul>{% for post in site.publications reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
+
 Talks
 ======
   <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html  %}
+    {% include archive-single-talk-cv.html %}
   {% endfor %}</ul>
-  
-Teaching
+
+Projects
 ======
-  <ul>{% for post in site.teaching reversed %}
+  <ul>{% for post in site.portfolio reversed %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
+
+Skills
 ======
-* Currently signed in to 43 different slack teams
+* **Programming:** Python, C, R
+* **AI libraries:** NumPy, Pandas, PyTorch, XGBoost, LangChain, Scikit-Learn, Optuna, Keras, Captum, Hugging Face
+* **Bioinformatics:** Scanpy, CellOracle, deepTools
+* **Tools:** Linux shell, Git, HPC (SLURM), GPU computing
+
+Languages
+======
+* Italian — native
+* English — C1 fluent (IELTS 7.5)
+* Spanish — B1 business (university exam 27/30)
