@@ -39,24 +39,6 @@ Research experience
   * Awarded three research contracts under the ERC-funded MicroC project
   * Supervised by Prof. Francesca Buffa
 
-Publications
-======
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-
-Talks
-======
-  <ul>{% for post in site.talks reversed %}
-    {% include archive-single-talk-cv.html %}
-  {% endfor %}</ul>
-
-Projects
-======
-  <ul>{% for post in site.portfolio reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-
 Skills
 ======
 * **Programming:** Python, C, R
