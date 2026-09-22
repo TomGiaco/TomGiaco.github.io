@@ -49,7 +49,7 @@ layout: default
 
         {% if page.paperurl or page.slidesurl or page.bibtexurl %}
           <p style="font-size: smaller">
-            {% if page.paperurl %}<a href="{{ page.paperurl }}">Download Paper</a>{% endif %}
+            {% if page.paperurl %}<a href="{{ page.paperurl }}">Read paper</a>{% endif %}
             {% if page.slidesurl %}{% if page.paperurl %} | {% endif %}<a href="{{ page.slidesurl }}">Download Slides</a>{% endif %}
             {% if page.bibtexurl %}{% if page.paperurl or page.slidesurl %} | {% endif %}<a href="{{ page.bibtexurl }}">Download Bibtex</a>{% endif %}
           </p>

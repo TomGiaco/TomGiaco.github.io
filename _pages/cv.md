@@ -9,15 +9,18 @@ redirect_from:
 
 {% include base_path %}
 
+<a href="{{ base_path }}/files/Tommaso_Giacomello_CV.pdf" class="btn">Download CV (PDF)</a>
+
 Education
 ======
 * **Ph.D. in Computer Science**, Bocconi University, Milan — Sep 2026 – present
   * Research: transformer models for understanding gene regulation and synthetic biological data generation
   * Core courses: Computer Science, Modern Machine Learning, Bayesian Statistics, Statistical Physics, Stochastic Processes
-  * Recipient of a PhD scholarship from the Fondo Italiano per la Scienza (FIS)
+  * Recipient of a PhD scholarship from the Fondo Italiano per la Scienza (FIS) for the DECODE project
+  * Supervised by Prof. Andrea Tangherloni
 
 * **M.Sc. in Artificial Intelligence**, Bocconi University, Milan — Sep 2024 – Oct 2026
-  * GPA: 28/30
+  * GPA: 28.1/30
   * Thesis: *Gene Regulatory Network Inference from Enformer-based models*
   * Core courses: Bioinformatics, Deep Learning, Reinforcement Learning, Natural Language Processing, Computer Vision, Software Engineering
 
